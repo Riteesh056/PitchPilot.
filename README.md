@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 PitchPilot – Voice AI Pitch Simulator
 
-## Getting Started
+A voice-first AI app that helps you practice startup pitches with **real-time investor-style questioning and feedback**.
 
-First, run the development server:
+---
+
+## ⚡ How to Run the App
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. And do also add you API KEYS in the .env.local file
+3. Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Environment Setup
 
-To learn more about Next.js, take a look at the following resources:
+Create a file named:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+.env.local
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Add your API keys:
 
-## Deploy on Vercel
+```
+GEMINI_API_KEY=your_gemini_api_key
+MURF_API_KEY=your_murf_api_key
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⚠️ Important:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* No quotes
+* No spaces
+* Restart server after adding keys
+
+---
+
+## 🧠 How It Works
+
+1. 🎤 Speak your pitch
+2. 🤖 AI acts as Investor / Judge / Mentor / Customer
+3. ❓ AI asks real-time questions
+4. 📊 Get feedback on clarity, weakness, and improvement
+
+---
+
+## 🛠 Tech Stack
+
+* Next.js (Frontend + Backend)
+* Gemini API (AI questioning + feedback)
+* Murf AI (Text-to-Speech)
+
+---
+
+## ✏️ Customization
+
+Edit UI here:
+
+```
+app/page.tsx
+```
+
+Edit AI logic here:
+
+```
+app/api/chat/route.ts
+app/api/feedback/route.ts
+```
+
+---
+
+## 🚨 Common Issues
+
+* **No AI response** → Check API key
+* **Speech not working** → Use Chrome + allow mic
+* **Server not updating** → Restart with `npm run dev`
+
+---
+
+## 🎯 What This App Does
+
+* Simulates real investor conversations
+* Builds confidence under pressure
+* Improves pitch clarity
+
+---
+
+## 🚀 Deploy
+
+Easiest way:
+👉 Use Vercel
+
+---
+
+## 💡 Final Note
+
+This is not just an AI app.
+
+It’s a **practice arena for high-pressure thinking**.
+
+Use it like one.
